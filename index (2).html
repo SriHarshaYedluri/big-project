@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main{
+            display:flex;
+            justify-content: center;
+        }
+        .image{
+            width:85%;
+        }
+        h1{
+            font-size:50px;
+            box-shadow: 1px 1px 4px gray;
+            color: white;
+            margin-top:20px;
+            margin-bottom: 30px;
+        }
+        .formy{
+            display:flex;
+            flex-direction: column;
+            width:100%;
+            
+             }
+             input[type="text"],[type="email"],[type="password"]{
+                border:2px solid grey;
+               
+                border-radius:15px;
+                  width:100%;
+                  padding:3%;
+                }
+            .background{
+             background:url(https://png.pngtree.com/thumb_back/fh260/background/20230706/pngtree-3d-rendered-cartoon-fast-food-for-a-restaurant-image_3804313.jpg);
+             background-size: cover;
+            }
+            
+            /*.one{
+                border:2px solid red;
+                box-shadow:10px;
+            }*/
+            
+            
+            .two{
+                text-align:right;
+                color: blue;
+                 
+            }
+            .two a{
+                text-decoration: none;
+            }
+            .three{
+                border-radius:15px;
+                width:20%;
+                margin-top:8%;
+                background: linear-gradient(to left,blue,purple,pink);
+                color:white;
+                padding:2% 3%;
+                font-weight:30px;
+                padding:2% 4%;
+                width:400px;
+                border:none;
+                }
+    </style>
+</head>
+<body class="background">
+
+    <section class="main">
+        <div class="one">
+        <center><h1>  Welcome  To ZOMATO</h1></center>
+        <form class="formy">
+    <label>Enter your name</label>
+    <input type="text" placeholder="enter  name " name="name" required/>
+    <label>Email ID</label>
+    <input type="email" placeholder="enter email id" name="Email Id" required/>
+    <label>Password</label>
+    <input type="password" placeholder="enter the password" name="password"required/>
+    <div class="two"><a href="#">Forgot  password?</a></div>
+   <center> <button class="three"><b>LOGIN</b></button></center>
+    
+</form>
+</div>
+    </section>
+</body>
+</html>
